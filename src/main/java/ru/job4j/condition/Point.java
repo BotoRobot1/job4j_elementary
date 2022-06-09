@@ -3,13 +3,13 @@ package ru.job4j.condition;
 public class Point {
 
     public static double distance(int x1, int y1, int x2, int y2) {
-        double ch1 = x2 - x1;
-        double ch2 = y2 - y1;
-        double rs1 = Math.pow(ch1, 2);
-        double rs2 = Math.pow(ch2, 2);
-        double rs3 = rs1 + rs2;
-        double rsl = Math.sqrt(rs3);
-        return rsl;
+        //double ch1 = x2 - x1;
+        //double ch2 = y2 - y1;
+        //double rs1 = Math.pow(ch1, 2);
+        //double rs2 = Math.pow(ch2, 2);
+        //double rs3 = rs1 + rs2;
+        //double rsl = Math.sqrt(rs3);
+        return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));// Ну или как вриант ТАК!
     }
 
     public static void main(String[] args) {
